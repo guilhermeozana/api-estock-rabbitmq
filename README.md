@@ -5,4 +5,4 @@ Foi desenvolvido 1 produtor em java com spring e 1 consumidor em java com spring
 
 Adicionado configuração do Prefecth Count do RabbitMQ.
 
-![image](https://github.com/guilhermeozana/stock-rabbitmq/assets/69025200/c8231e54-2623-4965-aff4-28649ae343ff)
+![Diagrama sem nome drawio](https://github.com/guilhermeozana/stock-rabbitmq/assets/69025200/2b7a9be3-a6a7-4d22-b990-4afc5668be82)
