@@ -34,20 +34,16 @@ public class RabbitMQConnection {
     @PostConstruct
     private void construct(){
         Queue stockQueue = this.queue(RabbitMQConstants.STOCK_QUEUE);
-        Queue priceQueue   = this.queue(RabbitMQConstants.PRICE_QUEUE);
 
         DirectExchange exchange = this.directExchange();
 
         Binding stockBinding = this.binding(stockQueue, exchange);
-        Binding priceBinding = this.binding(priceQueue, exchange);
 
         //Criando as filas no RabbitMQ
         this.amqpAdmin.declareQueue(stockQueue);
-        this.amqpAdmin.declareQueue(priceQueue);
 
         this.amqpAdmin.declareExchange(exchange);
 
         this.amqpAdmin.declareBinding(stockBinding);
-        this.amqpAdmin.declareBinding(priceBinding);
     }
 }

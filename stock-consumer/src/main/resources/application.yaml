@@ -5,5 +5,9 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: user
-    password: 123456
+    username: guest
+    password: guest
+#   listener:
+#     type: direct
+#     direct:
+#        prefetch: 2
