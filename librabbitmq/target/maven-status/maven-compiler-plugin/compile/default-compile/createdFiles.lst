@@ -1,0 +1,3 @@
+org\librabbitmq\dto\PriceDTO.class
+org\librabbitmq\dto\StockDTO.class
+org\librabbitmq\constants\RabbitMQConstants.class
